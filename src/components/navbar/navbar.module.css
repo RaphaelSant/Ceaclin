@@ -1,0 +1,73 @@
+/* navbar.module.css */
+
+/* Estilo do botão de resultados */
+.resultadosBtn {
+    background-color: #f08434;
+    /* Cor de fundo */
+    color: white;
+    /* Cor do texto */
+    padding: 8px 20px;
+    /* Espaçamento interno */
+    border-radius: 5px;
+    /* Bordas arredondadas */
+    font-size: 16px;
+    /* Tamanho da fonte */
+    text-decoration: none;
+    /* Remove o sublinhado padrão */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    /* Transições suaves */
+    box-shadow: 0px 4px 8px rgba(240, 132, 52, 0.4);
+    /* Sombra laranja suave */
+}
+
+/* Efeito hover */
+.resultadosBtn:hover {
+    background-color: #e06a2a;
+    /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05);
+    /* Aumenta o botão levemente */
+    box-shadow: 0px 6px 15px rgba(240, 132, 52, 0.6);
+    /* Sombra laranja mais intensa no hover */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Para garantir que o botão Resultados no mobile fique à esquerda do hambúrguer */
+.navbar-toggler {
+    margin-left: auto;
+    /* Move o botão de hambúrguer para a direita */
+}
+
+/* Estilo para o link do dropdown */
+.navLink:hover {
+    background-color: #f08434;
+    color: white;
+}
+
+/* Estilo para o menu do dropdown */
+/* .dropdownMenu {
+    /* Você pode adicionar mais estilos aqui, se necessário */
+/*}
+
+/* Estilo para os itens do dropdown */
+.dropdownItem:hover {
+    background-color: #f08434;
+    color: white;
+}
+
+/* Estilo para o item ativo do dropdown */
+.dropdown-item.active {
+    background-color: #f08434;
+    color: white;
+}
+
+@media (max-width: 991.98px) {
+    .resultadosBtn {
+        margin-left: 10px;
+        /* Espaço entre o botão e o hambúrguer */
+    }
+}
