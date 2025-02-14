@@ -9,7 +9,16 @@ export default function Home() {
         <>
             <Navbar />
             {/* Carousel - visível apenas em desktop*/}
-            <div id="carouselExampleFade" className="carousel slide carousel-fade d-none d-lg-block" style={{ marginTop: '80px' }} data-bs-ride="carousel">
+            <div style={{ marginTop: '80px' }}>
+                <h1>CEACLIN</h1>
+                <p>Fornecendo qualidade e resultados precisos!</p>
+                {/* Botão dentro do card */}
+                <a href="https://resultados.ceaclin.com.br/matrixnet/wfrmLogin.aspx"
+                    target="_blank" rel="noopener noreferrer" className={`${styles.btnCustom} btn btn-lg btn-light mt-3`} style={{ fontWeight: 'bold' }}>
+                    Acesse seus resultados
+                </a>
+            </div>
+            <div id="carouselExampleFade" className="carousel slide carousel-fade d-none d-lg-block" data-bs-ride="carousel">
                 <div className="carousel-inner">
                     <div className="carousel-item active" data-bs-interval="2000">
                         <img src="https://img.freepik.com/vetores-gratis/fundo-de-curva-azul_53876-113112.jpg" className="d-block w-100" style={{ maxHeight: '500px' }} alt="Fundo Azul Curvo" />
@@ -63,9 +72,6 @@ export default function Home() {
                 </div>
 
             </div>
-
-
-
 
             {/* Nossos Serviços */}
             <div className="container mt-5">
