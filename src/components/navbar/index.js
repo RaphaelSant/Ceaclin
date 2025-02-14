@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
     return (
-        <nav className="navbar navbar-expand-lg bg-body-tertiary z-3" style={{ height: '80px' }}>
+        <nav className="navbar navbar-expand-lg bg-body-tertiary z-3 fixed-top shadow" style={{ height: '80px' }}>
             <div className="container d-flex justify-content-between bg-body-tertiary text-center">
                 {/* Imagem da logo */}
                 <Link to="/">
@@ -18,6 +18,7 @@ export default function Navbar() {
                     className={`${styles.resultadosBtn} d-flex d-lg-none`}>
                     Resultados
                 </a>
+                
 
                 {/* Botão de menu (hambúrguer) */}
                 <button className="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
