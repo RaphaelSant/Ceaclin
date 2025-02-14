@@ -63,6 +63,16 @@
 
 @media (max-width: 991.98px) {
     .resultadosBtn {
-        margin-left: 10px;
+        margin-left: 0px;
+    }
+
+    .navContainer {
+        margin: 10px 0px;
+        gap: 10px;
+    }
+
+    .navLinkCustom {
+        border: 2px solid #333;
+        border-radius: 10px;
     }
 }

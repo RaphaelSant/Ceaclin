@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
     return (
-        <nav className="navbar navbar-expand-lg bg-body-tertiary" style={{ height: '80px' }}>
-            <div className="container d-flex justify-content-between">
+        <nav className="navbar navbar-expand-lg bg-body-tertiary z-3" style={{ height: '80px' }}>
+            <div className="container d-flex justify-content-between bg-body-tertiary text-center">
                 {/* Imagem da logo */}
                 <Link to="/">
                     <img src={Logo} className="me-3 img-fluid" alt="Logo" style={{ maxHeight: '30px' }} />
@@ -28,15 +28,18 @@ export default function Navbar() {
 
                 {/* Menu colapsável */}
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul className={`navbar-nav me-auto mb-2 mb-lg-0 ${styles.navContainer}`}>
                         <li className="nav-item">
-                            <a className={`nav-link ${styles.navLinkCustom}`} href="#">Exames</a>
+                            <a className={`nav-link ${styles.navLinkCustom}`} href="https://www.google.com">Exames</a>
                         </li>
                         <li className="nav-item">
-                            <a className={`nav-link ${styles.navLinkCustom}`} href="#">Perguntas Frequentes</a>
+                            <a className={`nav-link ${styles.navLinkCustom}`} href="https://www.google.com">Unidades</a>
                         </li>
                         <li className="nav-item">
-                            <a className={`nav-link ${styles.navLinkCustom}`} href="#">Sobre Nós</a>
+                            <a className={`nav-link ${styles.navLinkCustom}`} href="https://www.google.com">Sobre Nós</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className={`nav-link ${styles.navLinkCustom}`} href="https://www.google.com">Perguntas Frequentes</a>
                         </li>
                     </ul>
                 </div>

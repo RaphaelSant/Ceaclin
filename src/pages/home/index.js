@@ -38,7 +38,7 @@ export default function Home() {
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <a href="https://www.google.com" class="btn btn-primary">Go somewhere</a>
                         </div>
                     </div>
 
@@ -47,7 +47,7 @@ export default function Home() {
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <a href="https://www.google.com" class="btn btn-primary">Go somewhere</a>
                         </div>
                     </div>
 
@@ -56,7 +56,7 @@ export default function Home() {
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <a href="https://www.google.com" class="btn btn-primary">Go somewhere</a>
                         </div>
                     </div>
 
@@ -70,7 +70,7 @@ export default function Home() {
 
                     <p>Agora ficou ainda mais fácil cuidar da sua saúde. Agende seu exame online, de forma prática e rápida, sem sair do conforto da sua casa.</p>
 
-                    <a href="#" class="btn btn-primary">Saiba Mais</a>
+                    <a href="https://www.google.com" class="btn btn-primary">Saiba Mais</a>
 
                 </div>
             </div>
@@ -78,7 +78,7 @@ export default function Home() {
             <div className="conteiner mt-3">
                 <h1 className="text-center">Conforto e Qualidade</h1>
 
-                <div className="d-flex justify-content-center align-items-center gap-4">
+                <div className="d-flex-column justify-content-center align-items-center gap-4">
 
                     <p>No Laboratório São Rafael, cada detalhe foi pensado para oferecer a melhor experiência aos nossos pacientes. Desde ambientes acolhedores até a agilidade no atendimento, priorizamos o seu conforto e bem-estar.</p>
 
@@ -88,7 +88,7 @@ export default function Home() {
                         <li>Exames com atenção especial para idosos.</li>
                     </ul>
 
-                    <a href="#" class="btn btn-primary">Agende agora mesmo</a>
+                    <a href="https://www.google.com" class="btn btn-primary">Agende agora mesmo</a>
 
                 </div>
             </div>
@@ -96,11 +96,11 @@ export default function Home() {
             <div className="conteiner mt-3">
                 <h1 className="text-center">Nossas Unidades</h1>
 
-                <div className="d-flex justify-content-center align-items-center gap-4">
+                <div className="d-flex-column justify-content-center align-items-center gap-4">
 
                     <p>No Laboratório São Rafael, cada detalhe foi pensado para oferecer a melhor experiência aos nossos pacientes. Desde ambientes acolhedores até a agilidade no atendimento, priorizamos o seu conforto e bem-estar.</p>
 
-                    <a href="#" class="btn btn-primary">Agende agora mesmo</a>
+                    <a href="https://www.google.com" class="btn btn-primary">Agende agora mesmo</a>
 
                 </div>
             </div>
@@ -108,14 +108,14 @@ export default function Home() {
             <div className="conteiner mt-3">
                 <h1 className="text-center">Uma empresa amiga e certificada:</h1>
 
-                <div className="d-flex justify-content-center align-items-center gap-4">
+                <div className="d-flex-column justify-content-center align-items-center gap-4">
 
-                    <img src="https://tecnotron.com.br/wp-content/uploads/2024/07/pngwing.com-11.png.webp" style={{ height: '150px' }} />
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFy_l6QfBomRB3ooQIhmQAnFCjMe-c726ONw&s" style={{ height: '150px' }} />
+                    <img src="https://tecnotron.com.br/wp-content/uploads/2024/07/pngwing.com-11.png.webp" alt="Imagem" style={{ height: '150px' }} />
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFy_l6QfBomRB3ooQIhmQAnFCjMe-c726ONw&s" alt="Imagem" style={{ height: '150px' }} />
 
                     <p>No Laboratório São Rafael, cada detalhe foi pensado para oferecer a melhor experiência aos nossos pacientes. Desde ambientes acolhedores até a agilidade no atendimento, priorizamos o seu conforto e bem-estar.</p>
 
-                    <a href="#" class="btn btn-primary">Agende agora mesmo</a>
+                    <a href="https://www.google.com" class="btn btn-primary">Agende agora mesmo</a>
 
                 </div>
             </div>
