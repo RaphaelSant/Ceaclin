@@ -3,31 +3,34 @@ import React from "react";
 import Navbar from "../../components/navbar";
 import styles from "./home.module.css";
 import Logo from "../../assets/LOGOCEACLIN.png";
+import bkResultado from "../../assets/Background_Unidades-min.png";
+import carouselImg01 from "../../assets/carousel/1.png"
+import carouselImg02 from "../../assets/carousel/2.png"
+import carouselImg03 from "../../assets/carousel/3.png"
+import carouselImg04 from "../../assets/carousel/4.png"
 
 export default function Home() {
     return (
         <>
             <Navbar />
             {/* Carousel - visível apenas em desktop*/}
-            <div style={{ marginTop: '80px' }}>
-                <h1>CEACLIN</h1>
-                <p>Fornecendo qualidade e resultados precisos!</p>
-                {/* Botão dentro do card */}
-                <a href="https://resultados.ceaclin.com.br/matrixnet/wfrmLogin.aspx"
-                    target="_blank" rel="noopener noreferrer" className={`${styles.btnCustom} btn btn-lg btn-light mt-3`} style={{ fontWeight: 'bold' }}>
-                    Acesse seus resultados
-                </a>
-            </div>
-            <div id="carouselExampleFade" className="carousel slide carousel-fade d-none d-lg-block" data-bs-ride="carousel">
+            <div id="carouselExampleFade" className="carousel slide carousel-fade d-none d-lg-block" data-bs-ride="carousel" style={{ marginTop: '80px' }}>
                 <div className="carousel-inner">
-                    <div className="carousel-item active" data-bs-interval="2000">
-                        <img src="https://img.freepik.com/vetores-gratis/fundo-de-curva-azul_53876-113112.jpg" className="d-block w-100" style={{ maxHeight: '500px' }} alt="Fundo Azul Curvo" />
-                    </div>
+
                     <div className="carousel-item" data-bs-interval="2000">
-                        <img src="https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?cs=srgb&dl=pexels-padrinan-255379.jpg&fm=jpg" style={{ maxHeight: '500px' }} className="d-block w-100" alt="Imagem de Pexels" />
+                        <img src={carouselImg01} style={{ maxHeight: '100vh' }} className="d-block w-100" alt="Imagem de Pexels" />
                     </div>
+
                     <div className="carousel-item" data-bs-interval="2000">
-                        <img src="https://t3.ftcdn.net/jpg/00/86/56/12/360_F_86561234_8HJdzg2iBlPap18K38mbyetKfdw1oNrm.jpg" style={{ maxHeight: '500px' }} className="d-block w-100" alt="Imagem de Natureza" />
+                        <img src={carouselImg02} style={{ maxHeight: '100vh' }} className="d-block w-100" alt="Imagem de Natureza" />
+                    </div>
+
+                    <div className="carousel-item" data-bs-interval="2000">
+                        <img src={carouselImg03} style={{ maxHeight: '100vh' }} className="d-block w-100" alt="Imagem de Natureza" />
+                    </div>
+
+                    <div className="carousel-item" data-bs-interval="2000">
+                        <img src={carouselImg04} style={{ maxHeight: '100vh' }} className="d-block w-100" alt="Imagem de Natureza" />
                     </div>
                 </div>
                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
