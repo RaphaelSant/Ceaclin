@@ -3,7 +3,6 @@ import React from "react";
 import Navbar from "../../components/navbar";
 import styles from "./home.module.css";
 import Logo from "../../assets/LOGOCEACLIN.png";
-import bkResultado from "../../assets/Background_Unidades-min.png";
 import carouselImg01 from "../../assets/carousel/1.png"
 import carouselImg02 from "../../assets/carousel/2.png"
 import carouselImg03 from "../../assets/carousel/3.png"
@@ -14,32 +13,25 @@ export default function Home() {
         <>
             <Navbar />
             {/* Carousel - visível apenas em desktop*/}
-            <div id="carouselExampleFade" className="carousel slide carousel-fade d-none d-lg-block" data-bs-ride="carousel" style={{ marginTop: '80px' }}>
-                <div className="carousel-inner">
-
-                    <div className="carousel-item" data-bs-interval="2000">
-                        <img src={carouselImg01} style={{ maxHeight: '100vh' }} className="d-block w-100" alt="Imagem de Pexels" />
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" style={{ marginTop: '80px' }}>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src={carouselImg01} class="d-block w-100" alt="..." />
                     </div>
-
-                    <div className="carousel-item" data-bs-interval="2000">
-                        <img src={carouselImg02} style={{ maxHeight: '100vh' }} className="d-block w-100" alt="Imagem de Natureza" />
+                    <div class="carousel-item">
+                        <img src={carouselImg02} class="d-block w-100" alt="..." />
                     </div>
-
-                    <div className="carousel-item" data-bs-interval="2000">
-                        <img src={carouselImg03} style={{ maxHeight: '100vh' }} className="d-block w-100" alt="Imagem de Natureza" />
-                    </div>
-
-                    <div className="carousel-item" data-bs-interval="2000">
-                        <img src={carouselImg04} style={{ maxHeight: '100vh' }} className="d-block w-100" alt="Imagem de Natureza" />
+                    <div class="carousel-item">
+                        <img src={carouselImg03} class="d-block w-100" alt="..." />
                     </div>
                 </div>
-                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span className="visually-hidden">Anterior</span>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
                 </button>
-                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span className="visually-hidden">Próximo</span>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
                 </button>
             </div>
 
@@ -77,7 +69,7 @@ export default function Home() {
             </div>
 
             {/* Nossos Serviços */}
-            <div className="container mt-5">
+            <div className="container mt-5" data-aos="fade-up">
                 <h1 className="text-center mb-4">Nossos Serviços</h1>
                 <div className="row row-cols-1 row-cols-md-3 g-4">
                     {/* Card 1 */}
@@ -117,7 +109,7 @@ export default function Home() {
             </div>
 
             {/* Agende Exame */}
-            <div className="container mt-5">
+            <div className="container mt-5" data-aos="fade-up">
                 <h1 className="text-center mb-4">Agende Exame Sem Sair de Casa</h1>
                 <div className="text-center">
                     <p>Agora ficou ainda mais fácil cuidar da sua saúde. Agende seu exame online, de forma prática e rápida, sem sair do conforto da sua casa.</p>
@@ -149,7 +141,7 @@ export default function Home() {
             </div>
 
             {/* Certificação */}
-            <div className="container mt-5">
+            <div className="container mt-5" data-aos="fade-up">
                 <h1 className="text-center mb-4">Uma empresa amiga e certificada:</h1>
                 <div className="text-center">
                     <img src="https://tecnotron.com.br/wp-content/uploads/2024/07/pngwing.com-11.png.webp" alt="Certificação 1" style={{ height: '150px' }} className="mx-2" />
