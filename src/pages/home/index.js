@@ -3,10 +3,24 @@ import React from "react";
 import Navbar from "../../components/navbar";
 import styles from "./home.module.css";
 import Logo from "../../assets/LOGOCEACLIN.png";
-import carouselImg01 from "../../assets/carousel/1.png"
-import carouselImg02 from "../../assets/carousel/2.png"
-import carouselImg03 from "../../assets/carousel/3.png"
-import carouselImg04 from "../../assets/carousel/4.png"
+import HomeServicos from "./card";
+
+import carouselImg01 from "./assets/carousel/1.png";
+import carouselImg02 from "./assets/carousel/2.png";
+import carouselImg03 from "./assets/carousel/3.png";
+import carouselImg04 from "./assets/carousel/4.png";
+
+import confortoImg01 from "./assets/conforto/CEACLIN_1.webp";
+import confortoImg02 from "./assets/conforto/CEACLIN_3.webp";
+import confortoImg03 from "./assets/conforto/CEACLIN_4.webp";
+import confortoImg04 from "./assets/conforto/CEACLIN_6.webp";
+
+import bkAgendamento from "./assets/bk_agendamento.png";
+import HomeUnidades from "./unidades";
+
+import iso9001 from "../../assets/ISO_9001.png";
+import dic_c from "../../assets/DIC-C.jpg";
+import Footer from "../../components/footer";
 
 export default function Home() {
     return (
@@ -23,6 +37,9 @@ export default function Home() {
                     </div>
                     <div class="carousel-item">
                         <img src={carouselImg03} class="d-block w-100" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src={carouselImg04} class="d-block w-100" alt="..." />
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -69,87 +86,86 @@ export default function Home() {
             </div>
 
             {/* Nossos Serviços */}
-            <div className="container mt-5" data-aos="fade-up">
-                <h1 className="text-center mb-4">Nossos Serviços</h1>
-                <div className="row row-cols-1 row-cols-md-3 g-4">
-                    {/* Card 1 */}
-                    <div className="col">
-                        <div className="card h-100">
-                            <img src="https://t3.ftcdn.net/jpg/00/86/56/12/360_F_86561234_8HJdzg2iBlPap18K38mbyetKfdw1oNrm.jpg" className="card-img-top" alt="Card Image" />
-                            <div className="card-body">
-                                <h5 className="card-title">Card title</h5>
-                                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="https://www.google.com" className="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                    {/* Card 2 */}
-                    <div className="col">
-                        <div className="card h-100">
-                            <img src="https://t3.ftcdn.net/jpg/00/86/56/12/360_F_86561234_8HJdzg2iBlPap18K38mbyetKfdw1oNrm.jpg" className="card-img-top" alt="Card Image" />
-                            <div className="card-body">
-                                <h5 className="card-title">Card title</h5>
-                                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="https://www.google.com" className="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                    {/* Card 3 */}
-                    <div className="col">
-                        <div className="card h-100">
-                            <img src="https://t3.ftcdn.net/jpg/00/86/56/12/360_F_86561234_8HJdzg2iBlPap18K38mbyetKfdw1oNrm.jpg" className="card-img-top" alt="Card Image" />
-                            <div className="card-body">
-                                <h5 className="card-title">Card title</h5>
-                                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="https://www.google.com" className="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <HomeServicos />
 
             {/* Agende Exame */}
-            <div className="container mt-5" data-aos="fade-up">
-                <h1 className="text-center mb-4">Agende Exame Sem Sair de Casa</h1>
-                <div className="text-center">
-                    <p>Agora ficou ainda mais fácil cuidar da sua saúde. Agende seu exame online, de forma prática e rápida, sem sair do conforto da sua casa.</p>
-                    <a href="https://www.google.com" className="btn btn-primary">Saiba Mais</a>
+            <div
+                className={`${styles.parallaxSection} mt-5`}
+                style={{ backgroundImage: `url(${bkAgendamento})` }}
+            >
+                <div className="container mt-5 text-center d-flex align-items-center justify-content-center">
+                    <div className="p-4 rounded" style={{
+                        background: "rgba(255, 255, 255, 0.32)",
+                        backdropFilter: "blur(10px)",
+                        WebkitBackdropFilter: "blur(10px)" // Suporte para Safari
+                    }}>
+                        <h1 className="mb-4">Agende Seu Exame</h1>
+                        <p className="m-0">
+                            <b>Agora ficou ainda mais fácil cuidar da sua saúde.</b>
+                        </p>
+                        <p>Agende seu exame online, de forma prática e rápida, sem sair do conforto da sua casa.</p>
+                        <a href="https://www.google.com" className="btn botaoPadrao">
+                            Agendar exame
+                        </a>
+                    </div>
                 </div>
             </div>
 
             {/* Conforto e Qualidade */}
             <div className="container mt-5">
-                <h1 className="text-center mb-4">Conforto e Qualidade</h1>
-                <div className="text-center">
-                    <p>No Laboratório São Rafael, cada detalhe foi pensado para oferecer a melhor experiência aos nossos pacientes. Desde ambientes acolhedores até a agilidade no atendimento, priorizamos o seu conforto e bem-estar.</p>
-                    <ul className="list-unstyled">
-                        <li>Cuidado acolhedor para todas as idades.</li>
-                        <li>Espaços adaptados e conforto garantido.</li>
-                        <li>Exames com atenção especial para idosos.</li>
-                    </ul>
-                    <a href="https://www.google.com" className="btn btn-primary">Agende agora mesmo</a>
+                <h1 className="text-center mb-4" data-aos="fade-up" data-aos-duration="1500">Conforto e Qualidade</h1>
+                <div className="row align-items-center d-flex flex-wrap justify-content-center gap-5">
+                    {/* Coluna Esquerda: Imagens Pequenas */}
+                    <div data-aos="fade-right" data-aos-duration="1500" className="col-md-4 d-flex flex-wrap justify-content-center gap-2">
+                        <img src={confortoImg01} alt="Imagem 1" className={styles.smallImg} />
+                        <img src={confortoImg02} alt="Imagem 2" className={styles.smallImg} />
+                        <img src={confortoImg03} alt="Imagem 3" className={styles.smallImg} />
+                        <img src={confortoImg04} alt="Imagem 4" className={styles.smallImg} />
+                    </div>
+
+
+                    {/* Coluna Direita: Texto e Botão */}
+                    <div data-aos="fade-left" data-aos-duration="1500" className="col-md-5 text-center text-md-start">
+                        <p>
+                            No Laboratório Ceaclin, cada detalhe é cuidadosamente planejado para proporcionar a melhor experiência aos nossos pacientes. Desde ambientes acolhedores até a agilidade no atendimento, priorizamos o seu conforto e bem-estar.
+                        </p>
+                        <ul className="list-unstyled">
+                            <li>✅ Cuidado acolhedor para todas as idades.</li>
+                            <li>✅ Espaços adaptados e conforto garantido.</li>
+                            <li>✅ Exames com atenção especial para todos.</li>
+                        </ul>
+                        <a href="https://www.google.com" className="btn botaoPadrao">Agende agora mesmo</a>
+                    </div>
                 </div>
             </div>
+
 
             {/* Nossas Unidades */}
-            <div className="container mt-5">
-                <h1 className="text-center mb-4">Nossas Unidades</h1>
-                <div className="text-center">
-                    <p>Em nossas unidades, priorizamos a qualidade do atendimento e a experiência do paciente. Conheça as opções perto de você e agende seu atendimento.</p>
-                    <a href="https://www.google.com" className="btn btn-primary">Agende agora mesmo</a>
-                </div>
-            </div>
+            <HomeUnidades />
 
             {/* Certificação */}
-            <div className="container mt-5" data-aos="fade-up">
-                <h1 className="text-center mb-4">Uma empresa amiga e certificada:</h1>
-                <div className="text-center">
-                    <img src="https://tecnotron.com.br/wp-content/uploads/2024/07/pngwing.com-11.png.webp" alt="Certificação 1" style={{ height: '150px' }} className="mx-2" />
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFy_l6QfBomRB3ooQIhmQAnFCjMe-c726ONw&s" alt="Certificação 2" style={{ height: '150px' }} className="mx-2" />
-                    <p>No Laboratório São Rafael, cada detalhe foi pensado para oferecer a melhor experiência aos nossos pacientes. Desde ambientes acolhedores até a agilidade no atendimento, priorizamos o seu conforto e bem-estar.</p>
-                    <a href="https://www.google.com" className="btn btn-primary">Agende agora mesmo</a>
+            <div data-aos="fade-up" data-aos-duration="1500" className="container mt-5 d-flex flex-column align-items-center justify-content-center">
+                <h1 className="text-center mb-4">Uma empresa certificada</h1>
+                <div className="m-0 auto d-45 d-flex align-items-center justify-content-center">
+                    <div className="w-50">
+                        <p>No Laboratório Ceaclin, cada detalhe foi cuidadosamente planejado para proporcionar a melhor experiência aos nossos pacientes. Desde ambientes acolhedores até a agilidade no atendimento, garantimos conforto e bem-estar em cada etapa.</p>
+                        <p>Somos certificados pelo DIC-C e ISO 9001, assegurando a qualidade e excelência em nossos serviços laboratoriais.</p>
+                    </div>
+                    <div>
+                        <iframe className="rounded" width="560" height="315" src="https://www.youtube.com/embed/6stlCkUDG_s?si=IGve3wUAulFFmgwb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div className="d-flex align-items-center justify-content-center gap-5 mt-3">
+                    <div>
+                        <img src={dic_c} alt="Certificação 2" style={{ height: '150px' }} className="mx-2" />
+                    </div>
+                    <div>
+                        <img src={iso9001} alt="Certificação 2" style={{ height: '150px' }} className="mx-2" />
+                    </div>
                 </div>
             </div>
+            <Footer />
         </>
     );
 }
