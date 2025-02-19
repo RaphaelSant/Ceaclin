@@ -6,10 +6,10 @@ import { Link } from "react-router-dom";
 export default function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary z-3 fixed-top shadow" style={{ height: '80px' }}>
-            <div className="container d-flex justify-content-between bg-body-tertiary text-center">
+            <div className="container">
                 {/* Imagem da logo */}
                 <Link to="/">
-                    <img src={Logo} className="me-3 img-fluid" alt="Logo" style={{ maxHeight: '30px' }} />
+                    <img src={Logo} className={`me-3 img-fluid ${styles.imgLogo}`} alt="Logo" style={{ maxHeight: '30px' }} />
                 </Link>
 
                 {/* Botão de Resultados visível em mobile */}

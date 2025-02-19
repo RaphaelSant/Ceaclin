@@ -49,13 +49,13 @@ export default function HomeServicos() {
     ];
 
     return (
-        <div className="container mt-5 text-center" data-aos="fade-up" data-aos-duration="1500">
+        <div className="container mt-5 text-center" data-aos="fade-up" data-aos-duration="3000">
             <h1 className="text-center mb-4">Serviços Personalizados</h1>
-            <p>Oferecemos uma experiência prática e acessível para nossos clientes. </p>
-            <div className="row row-cols-1 row-cols-md-4 g-4">
+            <p>Oferecemos uma experiência prática e acessível para nossos clientes.</p>
+            <div className={`row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4`}>
                 {cards.map((card, index) => (
                     <div className="col" key={index}>
-                        <div className={`card d-flex flex-column justify-content-between align-items-center h-100 py-4 ${style.customCard}`}>
+                        <div className={`card m-3 d-flex flex-column justify-content-between align-items-center h-100 py-4 ${style.customCard}`}>
                             <div className={style.imgCardContainer}>
                                 <img
                                     src={card.imgOff}
@@ -77,5 +77,6 @@ export default function HomeServicos() {
                 ))}
             </div>
         </div>
+
     );
 }

@@ -64,7 +64,14 @@
 
 @media (max-width: 991.98px) {
     .resultadosBtn {
+        padding: 6px 15px;
+        border-radius: 5px;
+        font-size: 14px;
         margin-left: 0px;
+    }
+
+    .imgLogo {
+        width: 150px;
     }
 
     .navContainer {
