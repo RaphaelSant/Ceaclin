@@ -23,7 +23,7 @@ export default function HomeUnidades() {
 
             <div className="row align-items-center justify-content-center">
                 {/* Descrição e Botão */}
-                <div className="col-12 col-md-6 text-center p-5 rounded">
+                <div className="col-6 col-md-6 text-center p-5 rounded">
                     <p>
                         Em nossas unidades, priorizamos a qualidade do atendimento e a experiência do paciente. Conheça as opções perto de você e agende seu atendimento.
                     </p>

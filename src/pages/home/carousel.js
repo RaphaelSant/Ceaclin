@@ -34,6 +34,7 @@ const DemoCarousel = () => {
             onChange={onChange}
             onClickItem={onClickItem}
             onClickThumb={onClickThumb}
+            className='col-6 col-md-6 rounded mt-3'
         >
             <div>
                 <img src={unidade01} alt="Slide 1" />
