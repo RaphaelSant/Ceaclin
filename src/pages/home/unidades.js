@@ -10,6 +10,7 @@ import unidade06 from "../../assets/unidades/H9.png"
 import unidade07 from "../../assets/unidades/HC.png"
 import unidade08 from "../../assets/unidades/Prontocords.png"
 import unidade09 from "../../assets/unidades/Multiplik.png"
+import DemoCarousel from "./carousel";
 
 export default function HomeUnidades() {
     const [selectedImage, setSelectedImage] = useState(unidade01); // Imagem inicial selecionada
@@ -30,27 +31,7 @@ export default function HomeUnidades() {
                 </div>
 
                 {/* Imagens Carousel */}
-                <div className="col-12 col-md-6">
-                    <div className={`${style.carouselUnidcontainer} ${style.efeitoInner} rounded`}>
-                        {/* Imagem Principal */}
-                        <div className={style.mainUnidImage}>
-                            <img src={selectedImage} alt="Imagem Principal" className="img-fluid" />
-                        </div>
-
-                        {/* Imagens Secundárias (Miniaturas) */}
-                        <div className={style.carouselUnidThumbnails}>
-                            {images.map((img, index) => (
-                                <img
-                                    key={index}
-                                    src={img}
-                                    alt={`Unidade ${index + 1}`}
-                                    className={`${style.unidThumbnail} ${selectedImage === img ? 'active' : ''}`}
-                                    onClick={() => setSelectedImage(img)} // Mudar imagem principal
-                                />
-                            ))}
-                        </div>
-                    </div>
-                </div>
+                <DemoCarousel />
             </div>
         </div>
 
